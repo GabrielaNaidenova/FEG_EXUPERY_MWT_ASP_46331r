@@ -1,0 +1,318 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FEG_EXUPERY_MWT_ASP_46331r.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .auto-style18 {
+            height: 28px;
+            text-align:center;
+            width: 1496px;
+            
+        }
+        .auto-style43 {
+            margin-left: 5px;
+        }
+        .auto-style44 {
+            height: 47px;
+        }
+        .auto-style45 {
+            height: 47px;
+            width: 1503px;
+        }
+        .auto-style47 {
+            width: 307px;
+        }
+        .auto-style50 {
+            width: 566px;
+        }
+        .auto-style51 {
+            width: 378px;
+        }
+        .auto-style54 {
+            width: 165px;
+        }
+        .auto-style55 {
+            width: 312px;
+        }
+        .auto-style56 {
+            width: 313px;
+        }
+        .auto-style57 {
+            width: 314px;
+        }
+        .auto-style58 {
+            width: 416px;
+        }
+        .auto-style59 {
+            width: 367px;
+            border-radius:0px;
+        }
+        .auto-style60 {
+            width: 496px;
+            border-radius:0px;
+        }
+        .auto-style61 {
+            width: 217px;
+        }
+        .auto-style62 {
+            width: 171px;
+        }
+        .auto-style63 {
+            width: 174px;
+        }
+        .auto-style64 {
+            width: 352px;
+        }
+        .auto-style65 {
+            height: 47px;
+            width: 1502px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+        </div>
+        <table style="width: 100%;">
+            <tr style="background-color:#000066; height:20px; color: #FFFFFF; font-size: medium; font-family: Roboto;">
+                <td class="auto-style42">
+                    <asp:Image ID="Img_telephone" runat="server" Height="31px" ImageUrl="~/Pictures/Final_Phone.png" Width="31px" CssClass="auto-style43" />
+                </td>
+                <td class="auto-style47">
+                    <asp:Label ID="LblPhone_number" runat="server" Text="(+359 32) 957088"></asp:Label>
+                </td>
+                <td class="auto-style1">
+                    <asp:Image ID="Image1" runat="server" Height="31px" ImageUrl="~/Pictures/mail.png" Width="31px" />
+                </td>
+                <td class="auto-style50">
+                    <asp:Label ID="Lbl_email" runat="server" Text="lycee@feg-exupery.com"></asp:Label>
+                </td>
+                <td class="auto-style60">
+                    <asp:Menu ID="Menu_Administr_uslugi" runat="server" ForeColor="White">
+                        <Items>
+                            <asp:MenuItem Text="Адм. услуги" Value="Адм. услуги" NavigateUrl="https://feg-exupery.com/%d0%b0%d0%b4%d0%bc-%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="auto-style59">
+                    <asp:Menu ID="Menu_dostyp_do_info" runat="server" ForeColor="White">
+                        <Items>
+                            <asp:MenuItem Text="Достъп до информация" Value="Достъп до информация" NavigateUrl="https://feg-exupery.com/%d0%b4%d0%be%d1%81%d1%82%d1%8a%d0%bf-%d0%b4%d0%be-%d0%be%d0%b1%d1%89%d0%b5%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%b0-%d0%b8%d0%bd%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%86%d0%b8%d1%8f/"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="auto-style51">
+                    <asp:Menu ID="Menu_zashtita_na_LD" runat="server" ForeColor="White">
+                        <Items>
+                            <asp:MenuItem Text="Защита на личните данни" Value="Защита на личните данни" NavigateUrl="~/WebForm8_ZLD.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="auto-style58">
+                    <asp:Menu ID="Menu_profil_na_kupuvacha" runat="server" ForeColor="White">
+                        <Items>
+                            <asp:MenuItem Text="Профил на купувача" Value="Профил на купувача" NavigateUrl="https://feg-exupery.com/%d0%bf%d1%80%d0%be%d1%84%d0%b8%d0%bb-%d0%bd%d0%b0-%d0%ba%d1%83%d0%bf%d1%83%d0%b2%d0%b0%d1%87%d0%b0/"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="auto-style45">
+                    <asp:Menu ID="Menu_budget" runat="server" ForeColor="White" OnMenuItemClick="Menu_budget_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem Text="Бюджет" Value="Бюджет" NavigateUrl="https://feg-exupery.com/%d0%b1%d1%8e%d0%b4%d0%b6%d0%b5%d1%82/"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="9" style="background-color: #FFDA55">
+                    <asp:ImageButton ID="ImageButton_logo" runat="server" Height="82px" ImageUrl="~/Pictures/logo.png" OnClick="ImageButton_logo_Click" PostBackUrl="~/WebForm1_Index.aspx" Width="1501px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="9" style="font-family: Roboto; font-size: large; margin-top:0px;">
+                    <table style="width:100%; background-color: #000080; color: #FFFFFF;">
+                        <tr>
+                            <td class="auto-style64" >
+                                <asp:Menu ID="Menu8" runat="server" ForeColor="White" style="padding-left:220px;">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/WebForm1_Index.aspx" Text="Начало" Value="Начало"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style63">
+                                <asp:Menu ID="About" runat="server" ForeColor="White" style="padding-left:10px;" OnMenuItemClick="About_MenuItemClick">
+                                    <Items>
+                                        <asp:MenuItem Text="За нас" Value="За нас" NavigateUrl="~/WebForm2_About.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style32" style="padding-left:15px;">
+                                <asp:Menu ID="Menu10" runat="server" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/WebForm3_Priem.aspx" Text="Прием" Value="Прием"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style61" style="padding-left:15px;">
+                                <asp:Menu ID="School_life" runat="server" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem Text="Училищен живот" Value="Училищен живот" NavigateUrl="~/WebForm4_Uchilishten_jivot.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style54" style="padding-left:15px;">
+                                <asp:Menu ID="Students" runat="server" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem Text="За ученици" Value="За ученици" NavigateUrl="~/WebForm5_Za_Uchenici.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style62" style="padding-left:20px;">
+                                <asp:Menu ID="Menu_za_roditeli" runat="server" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/WebForm6_Za_roditeli.aspx" Text="За родители" Value="За родители"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style28">
+                                <asp:Menu ID="Menu11" runat="server" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/WebForm7_Documents.aspx" Text="Документи" Value="Документи"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="9" style="background-color:#EAEAEA" class="auto-style57">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        ТУК ПИША ИЗВИКВАЩАТА СТРАНИЦА!
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="9" style="background-color: #000066">
+                    <table style="width:100%; color: #FFFFFF; background-color: #000066; font-family: Roboto; font-size: x-large;">
+                        <tr>
+                            <td class="auto-style22">
+                                <asp:Label ID="lbl_vrazka_s_nas" runat="server" Text="Връзка с нас"></asp:Label>
+                            </td>
+                            <td class="auto-style55">
+                                <asp:Label ID="Lbl_barzi_vrazki" runat="server" Text="Бързи връзки"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Label ID="Lbl_polezni_vrazki" runat="server" Text="Полезни връзки"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="9" style="background-color: #000066; color: #FFFFFF;">
+                    <table style="width:100%; font-family: Roboto; font-size: medium; color: #FFFFFF;">
+                        <tr>
+                            <td class="auto-style19">
+                                <asp:Image ID="Image2" runat="server" Height="37px" ImageUrl="~/Pictures/phone_footer.png" Width="35px" />
+                            </td>
+                            <td class="auto-style35">
+                                <asp:Label ID="Lbl_kancelariq" runat="server" Text="(+359 32) 957088 - канцелария"></asp:Label>
+                            </td>
+                            <td class="auto-style20">
+                                <asp:Image ID="Image3" runat="server" Height="37px" ImageUrl="~/Pictures/eye.png" />
+                            </td>
+                            <td class="auto-style56">
+                                <asp:Menu ID="Menu9" runat="server" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="https://www.shkolo.bg/" Text="Електронен дневник" Value="Електорнен дневник"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style21">
+                                <asp:Image ID="Image9" runat="server" Height="37px" ImageUrl="~/Pictures/white_clip.png" Width="38px" />
+                            </td>
+                            <td>
+                                <asp:Menu ID="Menu_FOOTER_MON" runat="server" ForeColor="White" OnMenuItemClick="Menu_FOOTER_MON_MenuItemClick">
+                                    <Items>
+                                        <asp:MenuItem Text="Министерство на образованието" Value="Министерство на образованието"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style44">
+                                <asp:Image ID="Image5" runat="server" Height="37px" ImageUrl="~/Pictures/location.png" />
+                            </td>
+                            <td class="auto-style44">
+                                <asp:Label ID="Label2" runat="server" Text="Пловдив 4003, ул. &quot;Вук Караджич&quot; №13 А"></asp:Label>
+                            </td>
+                            <td class="auto-style44">
+                                <asp:Image ID="Image11" runat="server" Height="43px" ImageUrl="~/Pictures/outline_school_white_24dp.png" Width="40px" />
+                            </td>
+                            <td class="auto-style44">
+                                <asp:Menu ID="Menu" runat="server" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/WebForm9_Teachers.aspx" Text="Преподавателски екип" Value="Преподавателски екип"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="auto-style44">
+                                <asp:Image ID="Image4" runat="server" Height="37px" ImageUrl="~/Pictures/white_clip.png" Width="38px" />
+                            </td>
+                            <td class="auto-style44">
+                                <asp:Menu ID="Menu_FOOTER_SAVE_INTERNET" runat="server" ForeColor="White" OnMenuItemClick="Menu_FOOTER_SAVE_INTERNET_MenuItemClick">
+                                    <Items>
+                                        <asp:MenuItem Text="Център за безопасен интернет" Value="Център за безопасен интернет"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style19">
+                                <asp:Image ID="Image8" runat="server" Height="37px" ImageUrl="~/Pictures/mail.png" />
+                            </td>
+                            <td class="auto-style35">
+                                <asp:Label ID="Label3" runat="server" Text="lycee@feg-exupery.com"></asp:Label>
+                            </td>
+                            <td class="auto-style20">&nbsp;</td>
+                            <td class="auto-style56">&nbsp;</td>
+                            <td class="auto-style21">
+                                <asp:Image ID="Image10" runat="server" Height="37px" ImageUrl="~/Pictures/white_clip.png" Width="38px" />
+                            </td>
+                            <td>
+                                <asp:Menu ID="Menu_FOOTER_TELEFON_ZA_DECA" runat="server" ForeColor="White" OnMenuItemClick="Menu_FOOTER_TELEFON_ZA_DECA_MenuItemClick">
+                                    <Items>
+                                        <asp:MenuItem Text="Национална телефонна линия за деца" Value="Национална телефонна линия за деца"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="9" class="auto-style17" style="color: #FFFFFF">
+                    <table  class="auto-style65" >
+                        <tr>
+                            <td class="auto-style18" style="background-color:#000066;">
+                                <asp:Label ID="Lbl_footer_1" runat="server" Text="Всички права запазени.  ©2022  Френска езикова гимназия „Антоан дьо Сент-Екзюпери“ – гр. Пловдив.  " Font-Size="Medium"></asp:Label>
+                                <br />
+                                <br />
+                                <asp:Label ID="Lbl_footer_2" runat="server" Text="Designed by Gabriela Naydenova"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+    </form>
+    </body>
+</html>
